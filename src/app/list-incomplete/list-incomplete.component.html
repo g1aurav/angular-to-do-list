@@ -1,5 +1,5 @@
 <div class="container">
-  <table class="table">
+  <table class="table" *ngIf="todos.length">
     <thead>
       <tr>
         <th>ID</th>
@@ -21,4 +21,5 @@
       </tr>
     </thead>
   </table>
+  <div class="alert alert-warning" *ngIf="!todos.length">There are no incomplete Tasks!!</div>
 </div>
