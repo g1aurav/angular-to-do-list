@@ -1,3 +1,24 @@
-<p>
-  list-incomplete works!
-</p>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Task</th>
+        <th>Status</th>
+        <th>Toggle Status</th>
+      </tr>
+      <tr *ngFor="let todo of todos">
+        <td>{{todo.id}}</td>
+        <td>{{todo.text}}</td>
+        <td>
+          <span *ngIf="todo.isCompleted">Complete</span>
+          <span *ngIf="!todo.isCompleted">Incomplete</span>
+        </td>
+        <td>
+          <button class="btn btn-primary"
+          (click)="toggleStatus(todo)">Toggle Status</button>
+        </td>
+      </tr>
+    </thead>
+  </table>
+</div>

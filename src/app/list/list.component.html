@@ -15,7 +15,8 @@
           <span *ngIf="!todo.isCompleted">Incomplete</span>
         </td>
         <td>
-          <button class="btn btn-primary">Toggle Status</button>
+          <button class="btn btn-primary"
+          (click)="toggleStatus(todo)">Toggle Status</button>
         </td>
       </tr>
     </thead>
