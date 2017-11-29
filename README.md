@@ -1,5 +1,9 @@
 # AngularToDoList
 
+## Simple Tutorial project to create a basic to do list with angular
+
+This simple project encoporates some of the core features of angular such as components, routing and api calls using the Rxjs Observalbes.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.4.
 
 ## Development server
